@@ -113,6 +113,7 @@ import {AcceuilComponent} from '../../acceuil/acceuil.component';
 import {DashboardComponent} from '../../dashboard/dashboard.component';
 import {ArticleDetailsComponent} from '../../article-details/article-details.component';
 import {MenuComponent} from '../../menu/menu.component';
+import {FootersComponent} from '../../footers/footers.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -267,7 +268,10 @@ const routes: Routes = [
     children: [
       {path : 'login', component: LoginComponent }      ]
   },
-  {path : 'article_details', component: ArticleDetailsComponent }
+  {path : 'article_details', component: ArticleDetailsComponent } ,
+  { path: 'footers', component: FootersComponent },
+
+
 ];
 
 @NgModule({

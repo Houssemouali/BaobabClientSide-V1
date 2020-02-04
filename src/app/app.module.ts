@@ -135,6 +135,7 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
 import { MenuComponent } from './menu/menu.component';
+import { FootersComponent } from './footers/footers.component';
 
 
 @core.NgModule({
@@ -259,8 +260,8 @@ import { MenuComponent } from './menu/menu.component';
     LoginComponent,
     AcceuilComponent,
     ArticleDetailsComponent,
-    MenuComponent
-  ],
+    MenuComponent,
+    FootersComponent  ],
   imports: [
 
 
