@@ -108,9 +108,9 @@ import { IntroMinimalisticComponent } from '../../components/sections/intros-sec
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MDBBootstrapModulesPro} from 'ng-uikit-pro-standard';
-import {LoginComponent} from '../../components/login/login.component';
+import {LoginComponent} from '../../login/login.component';
 import {AcceuilComponent} from '../../acceuil/acceuil.component';
-import {DashboardComponent} from '../../components/dashboard/dashboard.component';
+import {DashboardComponent} from '../../dashboard/dashboard.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },

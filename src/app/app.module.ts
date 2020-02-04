@@ -130,9 +130,9 @@ import {HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
 import { NavComponent } from './components/nav/nav.component';
 import { QuillModule } from 'ngx-quill';
-import {LoginComponent} from './components/login/login.component';
+import {LoginComponent} from './login/login.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import {DashboardComponent} from './components/dashboard/dashboard.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 
 @core.NgModule({
