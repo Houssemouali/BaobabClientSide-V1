@@ -108,9 +108,9 @@ import { IntroMinimalisticComponent } from '../../components/sections/intros-sec
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MDBBootstrapModulesPro} from 'ng-uikit-pro-standard';
-import {WysComponent} from '../../components/wys/wys.component';
-import {RegistreComponent} from '../../components/registre/registre.component';
 import {DashboardComponent} from '../../components/menu/dashboard.component';
+import {LoginComponent} from '../../components/login/login.component';
+import {AcceuilComponent} from '../../acceuil/acceuil.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -235,12 +235,10 @@ const routes: Routes = [
   {
     path: 'sections', component: SectionsMainComponent, children: [
       { path: 'blog', component: BlogSectionComponent },
-      {path : 'login', component: RegistreComponent } ,
       { path: 'contact', component: ContactSectionComponent },
       { path: 'e-commerce', component: EcommerceSectionComponent },
       { path: 'features', component: FeaturesSectionComponent },
-      {
-        path: 'intros', component: IntrosSectionComponent, children: [
+      {path: 'intros', component: IntrosSectionComponent, children: [
           { path: 'app', component: IntroAppComponent },
           { path: 'contact', component: IntroContactComponent },
           { path: 'cta', component: IntroCtaComponent },
@@ -254,21 +252,19 @@ const routes: Routes = [
       { path: 'projects', component: ProjectsSectionComponent },
       { path: 'social', component: SocialSectionComponent },
       { path: 'team', component: TeamSectionComponent },
-      { path: 'testimonials', component: TestimonialsSectionComponent },
-      { path: 'wys', component: WysComponent },
-
-      { path: 'nav', component: NavComponent },
-
-      {path : 'login', component: RegistreComponent },
-      {path : 'dashboard', component: DashboardComponent , children: [
-          {path : 'login', component: RegistreComponent }      ]
-      }
-
-
-
-
+      { path: 'testimonials', component: TestimonialsSectionComponent }
     ]
   },
+
+  { path: 'nav', component: NavComponent },
+  {path : 'dashboard', component: DashboardComponent} ,
+
+  {path : 'login', component: LoginComponent },
+  {path : 'acceuil', component: AcceuilComponent },
+  {path : 'dashboard', component: DashboardComponent ,
+    children: [
+      {path : 'login', component: LoginComponent }      ]
+  }
 ];
 
 @NgModule({

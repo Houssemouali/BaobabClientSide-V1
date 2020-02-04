@@ -8,7 +8,7 @@ import {ChartsModule, MDBBootstrapModulesPro, ToastModule} from 'ng-uikit-pro-st
 
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 
-import { NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
@@ -128,11 +128,11 @@ import { FbShareParametersComponent } from './components/extended/fb-share-param
 import { FbLikeComponent } from './components/extended/fb-like/fb-like.component';
 import {HttpModule} from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
-import { WysComponent } from './components/wys/wys.component';
 import { NavComponent } from './components/nav/nav.component';
-import {RegistreComponent} from './components/registre/registre.component';
-import {DashboardComponent} from './components/menu/dashboard.component';
 import { QuillModule } from 'ngx-quill';
+import {DashboardComponent} from './components/menu/dashboard.component';
+import {LoginComponent} from './components/login/login.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
 
 
 @core.NgModule({
@@ -252,10 +252,10 @@ import { QuillModule } from 'ngx-quill';
     FbMixedShareComponent,
     FbShareParametersComponent,
     FbLikeComponent,
-    WysComponent,
     NavComponent,
-    RegistreComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent,
+    AcceuilComponent
   ],
   imports: [
 
@@ -278,7 +278,7 @@ import { QuillModule } from 'ngx-quill';
     RoutesModule,
   ],
   providers: [MDBSpinningPreloader, SharedService, FacebookService],
-  schemas:      [ NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA ],
+  schemas:      [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
