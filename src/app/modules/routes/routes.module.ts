@@ -112,6 +112,7 @@ import {LoginComponent} from '../../login/login.component';
 import {AcceuilComponent} from '../../acceuil/acceuil.component';
 import {DashboardComponent} from '../../dashboard/dashboard.component';
 import {ArticleDetailsComponent} from '../../article-details/article-details.component';
+import {MenuComponent} from '../../menu/menu.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -257,7 +258,7 @@ const routes: Routes = [
     ]
   },
 
-
+  { path: 'menu', component: MenuComponent },
   { path: 'nav', component: NavComponent },
   {path : 'dashboard', component: DashboardComponent} ,
   {path : 'login', component: LoginComponent },
