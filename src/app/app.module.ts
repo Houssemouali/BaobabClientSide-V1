@@ -133,6 +133,8 @@ import { QuillModule } from 'ngx-quill';
 import {LoginComponent} from './login/login.component';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @core.NgModule({
@@ -255,7 +257,9 @@ import {DashboardComponent} from './dashboard/dashboard.component';
     NavComponent,
     DashboardComponent,
     LoginComponent,
-    AcceuilComponent
+    AcceuilComponent,
+    ArticleDetailsComponent,
+    MenuComponent
   ],
   imports: [
 

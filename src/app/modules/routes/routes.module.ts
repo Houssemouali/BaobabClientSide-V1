@@ -111,6 +111,7 @@ import {MDBBootstrapModulesPro} from 'ng-uikit-pro-standard';
 import {LoginComponent} from '../../login/login.component';
 import {AcceuilComponent} from '../../acceuil/acceuil.component';
 import {DashboardComponent} from '../../dashboard/dashboard.component';
+import {ArticleDetailsComponent} from '../../article-details/article-details.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -256,15 +257,16 @@ const routes: Routes = [
     ]
   },
 
+
   { path: 'nav', component: NavComponent },
   {path : 'dashboard', component: DashboardComponent} ,
-
   {path : 'login', component: LoginComponent },
   {path : 'acceuil', component: AcceuilComponent },
   {path : 'dashboard', component: DashboardComponent ,
     children: [
       {path : 'login', component: LoginComponent }      ]
-  }
+  },
+  {path : 'article_details', component: ArticleDetailsComponent }
 ];
 
 @NgModule({
