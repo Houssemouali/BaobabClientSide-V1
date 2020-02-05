@@ -111,6 +111,7 @@ import {MDBBootstrapModulesPro} from 'ng-uikit-pro-standard';
 import {LoginComponent} from '../../login/login.component';
 import {AcceuilComponent} from '../../acceuil/acceuil.component';
 import {DashboardComponent} from '../../dashboard/dashboard.component';
+import { JournalistSignUpComponent } from 'src/app/JournalistComponents/journalist-sign-up/journalist-sign-up.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -205,7 +206,8 @@ const routes: Routes = [
       { path: 'pagination', component: PaginationTableComponent },
       { path: 'responsive', component: ResponsiveComponent },
       { path: 'search', component: SearchTableComponent },
-      { path: 'sort', component: SortComponent }
+      { path: 'sort', component: SortComponent },
+      {path:'signin',component:JournalistSignUpComponent}
     ]
   },
   {

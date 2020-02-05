@@ -35,7 +35,7 @@ export class InputsComponent {
 
   ngOnInit() {
     setTimeout(() => {
-      this.editorContent = '<h1>content changed!</h1>';
+      this.editorContent = 'change the content';
       console.log('you can use the quill instance object to do something', this.editor);
       // this.editor.disable();
     }, 2800)
