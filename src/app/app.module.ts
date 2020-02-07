@@ -135,6 +135,10 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import { JournalistSignUpComponent } from './JournalistComponents/journalist-sign-up/journalist-sign-up.component';
 import { LoginJournalistComponent } from './JournalistComponents/login-journalist/login-journalist.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { MenuComponent } from './menu/menu.component';
+import { FootersComponent } from './footers/footers.component';
+import { ArticlePaysComponent } from './article-pays/article-pays.component';
 
 
 @core.NgModule({
@@ -259,8 +263,11 @@ import { LoginJournalistComponent } from './JournalistComponents/login-journalis
     LoginComponent,
     AcceuilComponent,
     JournalistSignUpComponent,
-    LoginJournalistComponent
-  ],
+    LoginJournalistComponent,
+    ArticleDetailsComponent,
+    MenuComponent,
+    FootersComponent,
+    ArticlePaysComponent  ],
   imports: [
 
 

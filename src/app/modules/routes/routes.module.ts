@@ -112,6 +112,9 @@ import {LoginComponent} from '../../login/login.component';
 import {AcceuilComponent} from '../../acceuil/acceuil.component';
 import {DashboardComponent} from '../../dashboard/dashboard.component';
 import { JournalistSignUpComponent } from 'src/app/JournalistComponents/journalist-sign-up/journalist-sign-up.component';
+import {ArticleDetailsComponent} from '../../article-details/article-details.component';
+import {MenuComponent} from '../../menu/menu.component';
+import {FootersComponent} from '../../footers/footers.component';
 const routes: Routes = [
 /*
   { path: ' ', component: RFNComponent },
@@ -206,8 +209,8 @@ const routes: Routes = [
       { path: 'pagination', component: PaginationTableComponent },
       { path: 'responsive', component: ResponsiveComponent },
       { path: 'search', component: SearchTableComponent },
-      { path: 'sort', component: SortComponent },
-      {path:'signin',component:JournalistSignUpComponent}
+      { path: 'sort', component: SortComponent }
+     
     ]
   },
   {
@@ -258,15 +261,19 @@ const routes: Routes = [
     ]
   },
 
+  { path: 'menu', component: MenuComponent },
   { path: 'nav', component: NavComponent },
   {path : 'dashboard', component: DashboardComponent} ,
-
   {path : 'login', component: LoginComponent },
   {path : 'acceuil', component: AcceuilComponent },
   {path : 'dashboard', component: DashboardComponent ,
     children: [
       {path : 'login', component: LoginComponent }      ]
-  }
+  },
+  {path : 'article_details', component: ArticleDetailsComponent } ,
+  { path: 'footers', component: FootersComponent },
+  {path:'signin',component:JournalistSignUpComponent}
+
 ];
 
 @NgModule({
