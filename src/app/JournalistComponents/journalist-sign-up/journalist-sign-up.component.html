@@ -1,0 +1,107 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <h4 class="text-center">Journalist Sign IN</h4>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" formControlName="orangeFormuserName" id="orangeForm-username" class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.orangeFormuserName.errors }" mdbInputDirective>
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+          <!-- <div *ngIf="f.orangeFormuserName.errors.required">username is required</div> -->
+          <label for="orangeForm-username">Your name</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-envelope prefix grey-text"></i>
+          <input type="text" formControlName="orangeFormEmail" id="orangeForm-email" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.orangeFormEmail.errors }" mdbInputDirective>
+          <!-- <div *ngIf="f.orangeFormuserName.errors.required">username is required</div> -->
+
+          <label for="orangeForm-email">Your email</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-lock prefix grey-text"></i>
+          <input type="password" formControlName="orangeFormPass" id="orangeForm-pass" class="form-control"
+            mdbInputDirective>
+          <!-- <div *ngIf="f.orangeFormuserName.errors.required">username is required</div> -->
+          <label for="orangeForm-pass">Your password</label>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mx-auto mt-5">
+            <h4 class="text-center">Birth date:</h4>
+            <mdb-date-picker name="mydate" [placeholder]="'Selected date'" formControlName="birthCalendar"
+              [(ngModel)]="model" required></mdb-date-picker>
+          </div>
+        </div>
+        <!-- Initial value -->
+        <!-- <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h4 class="text-center">Initial value</h4>
+          <mdb-autocomplete [label]="'Select color'" name="autocomplete" initialValue="'Select color'" [(ngModel)]="initialValueSearchStr"
+            [datasource]="initialValueDataService" [minSearchLength]="0">
+          </mdb-autocomplete>
+        </div>
+      </div> -->
+
+        <div class="col-md-6 mx-auto mt-5">
+          <h4 class="text-center">select nationality:</h4>
+          <mdb-select [options]="optionsSelect" formControlName="selectForm" placeholder="Choose your nationality">
+          </mdb-select>
+          <!-- <div *ngIf="f.selectForm.errors.required">username must be selected </div> -->
+
+        </div>
+        <div class="md-form">
+          <i class="fas fa-briefcase prefix grey-text"></i>
+          <input type="text" formControlName="orangeFormentreprise" id="orangeForm-entreprise" class="form-control"
+            mdbInputDirective>
+          <!-- <div *ngIf="f.orangeFormuserName.errors.required">username is required</div> -->
+
+          <label for="orangeForm-entreprise">Actual entreprise</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-pencil prefix grey-text"></i>
+          <textarea type="text" id="motivationFormMessage" formControlName="motivationFormMessage" class="md-textarea"
+            style="height: 100px" mdbInputDirective></textarea>
+          <!-- <div *ngIf="f.motivationFormMessage.errors.required">username is required</div> -->
+
+          <label for="motivationFormMessage">Your motivation text</label>
+        </div>
+
+        <div class="md-form">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text" formControlName="nomFormName" id="orangeForm-name" class="form-control" mdbInputDirective>
+          <!-- <div *ngIf="f.nomFormName.errors.required">username is required</div> -->
+
+          <label for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text" formControlName="prenomFormName" id="orangeForm-surname" class="form-control"
+            mdbInputDirective>
+          <!-- <div *ngIf="f.prenomFormName.errors.required">username is required</div> -->
+          <label for="orangeForm-name">Your surname</label>
+        </div>
+        <!---years of experience -->
+        <div class="md-form">
+          <input type="number" formControlName="xpNumFormName" id="numberExample" class="form-control"
+            mdbInputDirective>
+
+          <!-- <div *ngIf="f.xpNumFormName.errors.required">username is required</div> -->
+
+          <label for="numberExample">years of experience</label>
+        </div>
+        <!---phone number -->
+        <div class="md-form">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text" formControlName="phoneFormName" id="orangeForm-phone" class="form-control"
+            mdbInputDirective>
+            <label for="orangeForm-phone">Phone number°:</label>
+          <!-- <div *ngIf="f.phoneFormName.errors.required">username is required</div> -->
+        </div>
+        <div class="md-form">
+          <button mdbBtn type="button" color="primary" rounded="true" mdbWavesEffect>
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Register
+          </button>
+        </div>
+    </form>
+  </div>
+</div>
